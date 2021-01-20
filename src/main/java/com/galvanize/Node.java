@@ -1,12 +1,15 @@
 package com.galvanize;
 
-public class Node{
+public class Node<T> {
 
-    int value;
+    T value;
     Node next;
 
-    Node(int val){
+    Node(T val){
         this.value = val;
     }
 
+    public T getValue() {
+        return  value;
+    }
 }
