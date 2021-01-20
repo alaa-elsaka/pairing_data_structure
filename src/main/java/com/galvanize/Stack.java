@@ -1,5 +1,7 @@
 package com.galvanize;
 
+import java.util.NoSuchElementException;
+
 public class Stack {
 
     private Node top;
@@ -23,5 +25,26 @@ public class Stack {
 
     public int count() {
         return size;
+    }
+
+    public Node pop() {
+        if(isEmpty()){
+           return null;
+        }else{
+
+            Node removedNode = top;
+            top = top.next;
+            size--;
+            return removedNode;
+
+        }
+    }
+
+    public Node peek() {
+        if(isEmpty()){
+            return null;
+        }else{
+            return top;
+        }
     }
 }

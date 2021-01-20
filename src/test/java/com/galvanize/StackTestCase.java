@@ -30,25 +30,25 @@ class StackTestCase {
         assertEquals(3, stack.count());
     }
 
-//    @Test
-//    void testStackPopRemovesNode_LIFO() {
-//        stack.push(new Node(200));
-//        stack.push(new Node(300));
-//        Node lastIn = new Node(400);
-//        stack.push(lastIn);
-//
-//        Node firstOut = stack.pop();
-//        assertEquals(2, stack.count());
-//        assertEquals(lastIn, firstOut);
-//    }
-//
-//    @Test
-//    void testStackPeekReturnsTopNode() {
-//        Node item = new Node(200);
-//        Node topItem = new Node(300);
-//        stack.push(item);
-//        stack.push(topItem);
-//        Node peekItem = stack.peek();
-//        assertEquals(topItem, peekItem);
-//    }
+    @Test
+    void testStackPopRemovesNode_LIFO() {
+        stack.push(new Node(200));
+        stack.push(new Node(300));
+        Node lastIn = new Node(400);
+        stack.push(lastIn);
+
+        Node firstOut = stack.pop();
+        assertEquals(2, stack.count());
+        assertEquals(lastIn, firstOut);
+    }
+
+    @Test
+    void testStackPeekReturnsTopNode() {
+        Node item = new Node(200);
+        Node topItem = new Node(300);
+        stack.push(item);
+        stack.push(topItem);
+        Node peekItem = stack.peek();
+        assertEquals(topItem, peekItem);
+    }
 }
