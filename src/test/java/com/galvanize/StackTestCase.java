@@ -44,8 +44,8 @@ class StackTestCase {
 
     @Test
     void testStackPeekReturnsTopNode() {
-        Node item = new Node(200);
-        Node topItem = new Node(300);
+        Node item =  new Node(200);
+        Node topItem =  new Node(300);
         stack.push(item);
         stack.push(topItem);
         Node peekItem = stack.peek();
