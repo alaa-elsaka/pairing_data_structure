@@ -1,14 +1,6 @@
 package com.galvanize;
 
-import com.galvanize.Graph;
-import com.galvanize.Node;
-import com.galvanize.Vertex;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
-import java.util.ArrayList;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 public class GraphTestCase {
     Graph graph;

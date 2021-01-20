@@ -5,9 +5,6 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import com.galvanize.Stack;
-import com.galvanize.Node;
-
 class StackTestCase {
     Stack stack;
 
@@ -22,17 +19,17 @@ class StackTestCase {
         stack.push(new Node(100));
         assertFalse(stack.isEmpty());
     }
-//
-//    @Test
-//    void testCount() {
-//        assertEquals(0, stack.count());
-//        stack.push(new Node(100));
-//        assertEquals(1, stack.count());
-//        stack.push(new Node(200));
-//        stack.push(new Node(300));
-//        assertEquals(3, stack.count());
-//    }
-//
+
+    @Test
+    void testCount() {
+        assertEquals(0, stack.count());
+        stack.push(new Node(100));
+        assertEquals(1, stack.count());
+        stack.push(new Node(200));
+        stack.push(new Node(300));
+        assertEquals(3, stack.count());
+    }
+
 //    @Test
 //    void testStackPopRemovesNode_LIFO() {
 //        stack.push(new Node(200));

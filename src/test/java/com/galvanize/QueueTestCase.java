@@ -1,10 +1,6 @@
 package com.galvanize;
 
-import com.galvanize.Node;
-import com.galvanize.Queue;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 
 public class QueueTestCase {
     Queue queue;

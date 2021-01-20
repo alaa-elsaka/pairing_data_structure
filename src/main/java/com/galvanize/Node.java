@@ -1,13 +1,12 @@
 package com.galvanize;
 
-/*
-    Node
+public class Node{
 
-    Nodes are the individual units contained in a data structure.
+    int value;
+    Node next;
 
-    A node is a value object, representing any type of value and
-    providing a reference to the next node.
- */
-public class Node {
+    Node(int val){
+        this.value = val;
+    }
 
 }
